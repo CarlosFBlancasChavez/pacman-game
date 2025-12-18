@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacman Arcade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1 class="title">PACMAN GAME</h1>
+        <h2 class="subtitle">Programado por Carlos Franco Blancas Chávez</h2>
+
+        <div class="canvas-wrapper">
+            <canvas id="canvas" width="500" height="500"></canvas>
+        </div>
+
+        <p class="credits">© Arcade Classic</p>
+    </div>
+
+    <div style="display:none;">
+        <img id="animation" src="img/animations.gif" width="140" height="20">
+        <img id="ghosts" src="img/ghost.png" width="140" height="20">
+    </div>
+
+    <script src="ghost.js"></script>
+    <script src="pacman.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

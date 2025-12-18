@@ -1,0 +1,66 @@
+/* Fuente retro */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle, #000428, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Contenedor principal */
+.game-container {
+    text-align: center;
+}
+
+/* Título */
+.title {
+    font-size: 2.2rem;
+    color: #ffe600;
+    text-shadow:
+        0 0 10px #ffe600,
+        0 0 20px #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* Marco del canvas */
+.canvas-wrapper {
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #111, #000);
+    box-shadow:
+        0 0 20px #00f2ff,
+        0 0 40px rgba(0, 242, 255, 0.4);
+}
+
+/* Canvas */
+canvas {
+    display: block;
+    background-color: black;
+    border: 4px solid #00f2ff;
+    border-radius: 10px;
+}
+
+/* Créditos */
+.credits {
+    margin-top: 15px;
+    font-size: 0.6rem;
+    color: #aaa;
+}
+
+.subtitle {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
